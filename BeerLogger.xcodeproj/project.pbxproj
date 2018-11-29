@@ -15,9 +15,12 @@
 		B0C7B71121AEBFB200475B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C7B70F21AEBFB200475B59 /* LaunchScreen.storyboard */; };
 		B0C7B71921AED07F00475B59 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B71821AED07F00475B59 /* SettingTableViewController.swift */; };
 		B0C7B71B21AED82700475B59 /* InputAPIKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B71A21AED82700475B59 /* InputAPIKeyViewController.swift */; };
+		B4C19DB778025E5EE46F11E2 /* Pods_BeerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567846A6ED8EAD3D334E5673 /* Pods_BeerLogger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		567846A6ED8EAD3D334E5673 /* Pods_BeerLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		782F1A0C1067EF547887F8E6 /* Pods-BeerLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger.release.xcconfig"; sourceTree = "<group>"; };
 		B0C7B70121AEBFAE00475B59 /* BeerLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C7B70421AEBFAE00475B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C7B70621AEBFAE00475B59 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		B0C7B71221AEBFB200475B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0C7B71821AED07F00475B59 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		B0C7B71A21AED82700475B59 /* InputAPIKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAPIKeyViewController.swift; sourceTree = "<group>"; };
+		C84DC2A5F2E9C0AFAB545DB7 /* Pods-BeerLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerLogger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C19DB778025E5EE46F11E2 /* Pods_BeerLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54F928BC09856DB21C821179 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C84DC2A5F2E9C0AFAB545DB7 /* Pods-BeerLogger.debug.xcconfig */,
+				782F1A0C1067EF547887F8E6 /* Pods-BeerLogger.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		761F052866A840912E1A1CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				567846A6ED8EAD3D334E5673 /* Pods_BeerLogger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0C7B6F821AEBFAE00475B59 = {
 			isa = PBXGroup;
 			children = (
 				B0C7B70321AEBFAE00475B59 /* BeerLogger */,
 				B0C7B70221AEBFAE00475B59 /* Products */,
+				54F928BC09856DB21C821179 /* Pods */,
+				761F052866A840912E1A1CD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0C7B71521AEBFB200475B59 /* Build configuration list for PBXNativeTarget "BeerLogger" */;
 			buildPhases = (
+				742CC89CABD75A9AA0CE1044 /* [CP] Check Pods Manifest.lock */,
 				B0C7B6FD21AEBFAE00475B59 /* Sources */,
 				B0C7B6FE21AEBFAE00475B59 /* Frameworks */,
 				B0C7B6FF21AEBFAE00475B59 /* Resources */,
+				4B9E049EC2475AE4FB5C13F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +164,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B9E049EC2475AE4FB5C13F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		742CC89CABD75A9AA0CE1044 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeerLogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0C7B6FD21AEBFAE00475B59 /* Sources */ = {
@@ -290,6 +365,7 @@
 		};
 		B0C7B71621AEBFB200475B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84DC2A5F2E9C0AFAB545DB7 /* Pods-BeerLogger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +383,7 @@
 		};
 		B0C7B71721AEBFB200475B59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782F1A0C1067EF547887F8E6 /* Pods-BeerLogger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

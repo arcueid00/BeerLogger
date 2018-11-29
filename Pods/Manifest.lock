@@ -1,0 +1,22 @@
+PODS:
+  - Apollo (0.9.3):
+    - Apollo/Core (= 0.9.3)
+  - Apollo/Core (0.9.3)
+  - GRDB.swift (3.3.1)
+
+DEPENDENCIES:
+  - Apollo
+  - GRDB.swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Apollo
+    - GRDB.swift
+
+SPEC CHECKSUMS:
+  Apollo: 38270f8bdc031ac07d4de3ec068a2289d7d287e0
+  GRDB.swift: d7ec5d5cc95df7f08c655e5a6500b54f4b092e89
+
+PODFILE CHECKSUM: a99113457c6627538a8cf13f3f10728ac6c05d77
+
+COCOAPODS: 1.5.3
