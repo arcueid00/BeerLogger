@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B007E30F21B16D2500D68721 /* RateBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007E30E21B16D2500D68721 /* RateBeer.swift */; };
 		B0C7B70521AEBFAE00475B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70421AEBFAE00475B59 /* AppDelegate.swift */; };
 		B0C7B70721AEBFAE00475B59 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70621AEBFAE00475B59 /* FirstViewController.swift */; };
 		B0C7B70921AEBFAE00475B59 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70821AEBFAE00475B59 /* SecondViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		567846A6ED8EAD3D334E5673 /* Pods_BeerLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		782F1A0C1067EF547887F8E6 /* Pods-BeerLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger.release.xcconfig"; sourceTree = "<group>"; };
+		B007E30E21B16D2500D68721 /* RateBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateBeer.swift; sourceTree = "<group>"; };
 		B0C7B70121AEBFAE00475B59 /* BeerLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C7B70421AEBFAE00475B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C7B70621AEBFAE00475B59 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				B0C7B71221AEBFB200475B59 /* Info.plist */,
 				B0C7B71821AED07F00475B59 /* SettingTableViewController.swift */,
 				B0C7B71A21AED82700475B59 /* InputAPIKeyViewController.swift */,
+				B007E30E21B16D2500D68721 /* RateBeer.swift */,
 			);
 			path = BeerLogger;
 			sourceTree = "<group>";
@@ -171,16 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
@@ -195,15 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BeerLogger-checkManifestLockResult.txt",
 			);
@@ -224,6 +219,7 @@
 				B0C7B70521AEBFAE00475B59 /* AppDelegate.swift in Sources */,
 				B0C7B71B21AED82700475B59 /* InputAPIKeyViewController.swift in Sources */,
 				B0C7B70721AEBFAE00475B59 /* FirstViewController.swift in Sources */,
+				B007E30F21B16D2500D68721 /* RateBeer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZHBP348EF;
 				INFOPLIST_FILE = BeerLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZHBP348EF;
 				INFOPLIST_FILE = BeerLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

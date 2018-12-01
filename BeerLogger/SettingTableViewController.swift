@@ -108,7 +108,14 @@ class SettingTableViewController: UITableViewController {
         {
             //設定する
             let nextViewController = (segue.destination as? InputAPIKeyViewController)
-            nextViewController?.apiKeyString = (userDefaults.object(forKey:"APIKey") as? String)!
+            if( userDefaults.object(forKey: "APIKey") == nil)
+            {
+                nextViewController?.apiKeyString = ""
+            }
+            else
+            {
+                nextViewController?.apiKeyString = (userDefaults.object(forKey:"APIKey") as? String)!
+            }
         }
     }
 

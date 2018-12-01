@@ -17,6 +17,7 @@ class InputAPIKeyViewController: UIViewController {
 
     @IBOutlet weak var APIKeyTextField: UITextField!
     
+    @IBOutlet weak var TestButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,7 +31,12 @@ class InputAPIKeyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func didPushTestButton(_ sender: Any) {
+        let ratebeer = RateBeer()
+        _ = ratebeer.GetJson()
+        
+    }
+    
     @IBAction func didPushOKButton(_ sender: Any) {
         userDefaults.set(APIKeyTextField.text, forKey: "APIKey")
         self.dismiss(animated: true, completion: nil)
