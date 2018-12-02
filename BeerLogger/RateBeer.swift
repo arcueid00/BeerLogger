@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import ObjectMapper
 
 class RateBeer: NSObject {
-    var apiKey : String = "CR1oSGui1u4tK7wbBqyDR9WpfkTHe0mm49PAqWek"
+    var apiKey : String = ""
     
     func GetJson() -> String
     {
-        let url = URL(string : "")!
+        let url = URL(string : "https://api.r8.beer/v1/api/graphql/")!
         
         var request = URLRequest(url:url)
         request.httpMethod = "POST"
@@ -21,7 +22,7 @@ class RateBeer: NSObject {
         request.addValue("application/json", forHTTPHeaderField : "accept")
         request.addValue(apiKey, forHTTPHeaderField : "x-api-key")
         
-        let query = "query {\n beer(id: 4934) {\n id\n name\n }\n}"
+        let query = BeerSearchString(SearchString: "minoh")//"query {\n beer(id: 4934) {\n id\n name\n }\n}"
         let body = ["query" : query]
         request.httpBody = try! JSONSerialization.data(withJSONObject: body, options: [])
         request.cachePolicy = .reloadIgnoringLocalCacheData
@@ -34,6 +35,9 @@ class RateBeer: NSObject {
                 print( text! as String )
                 let json = try JSONSerialization.jsonObject(with:data, options:[])
                 print(json)
+                let beerSearchQueryRoot : BeerSearchQueryRoot  = Mapper().map(JSONString: text! as String)!
+                print(beerSearchQueryRoot.data!.beerSearch!.beers[0].name)
+                
             }catch let e{
                 print("Parse error : \(e)")
             }
@@ -41,6 +45,41 @@ class RateBeer: NSObject {
         task.resume()
         
         return ""
+    }
+    
+    func AddOneLine( BaseString baseString : String, AddString addString : String ) -> String
+    {
+        let resultString = baseString + addString + "\n"
+        return resultString
+    }
+    
+    func BeerSearchString( SearchString searchString : String ) -> String
+    {
+        var baseString : String = ""
+        baseString = AddOneLine( BaseString: baseString, AddString: "query{" )
+        var beerSeachLineString : String = "beerSearch(query:\""
+        beerSeachLineString = beerSeachLineString + searchString + "\", first:5, after:0)"
+        
+        baseString = AddOneLine( BaseString: baseString, AddString: beerSeachLineString)
+        baseString = AddOneLine( BaseString: baseString, AddString: "{" )
+        baseString = AddOneLine( BaseString: baseString, AddString: "totalCount" )
+        baseString = AddOneLine( BaseString: baseString, AddString: "items{" )
+
+        baseString = AddOneLine( BaseString: baseString, AddString: "id," )
+        baseString = AddOneLine( BaseString: baseString, AddString: "name," )
+        baseString = AddOneLine( BaseString: baseString, AddString: "imageUrl," )
+        baseString = AddOneLine( BaseString: baseString, AddString: "abv," )
+        baseString = AddOneLine( BaseString: baseString, AddString: "overallScore" )
+        
+        baseString = AddOneLine( BaseString: baseString, AddString: "}" )
+
+        baseString = AddOneLine( BaseString: baseString, AddString: "last" )
+
+        baseString = AddOneLine( BaseString: baseString, AddString: "}" )
+        baseString = AddOneLine( BaseString: baseString, AddString: "}" )
+
+        return baseString
+        
     }
     
     

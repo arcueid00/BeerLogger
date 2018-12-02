@@ -1,22 +1,26 @@
 PODS:
-  - Apollo (0.9.3):
-    - Apollo/Core (= 0.9.3)
-  - Apollo/Core (0.9.3)
-  - GRDB.swift (3.3.1)
+  - Apollo (0.9.4):
+    - Apollo/Core (= 0.9.4)
+  - Apollo/Core (0.9.4)
+  - GRDB.swift (3.5.0)
+  - ObjectMapper (3.4.1)
 
 DEPENDENCIES:
   - Apollo
   - GRDB.swift
+  - ObjectMapper
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Apollo
     - GRDB.swift
+    - ObjectMapper
 
 SPEC CHECKSUMS:
-  Apollo: 38270f8bdc031ac07d4de3ec068a2289d7d287e0
-  GRDB.swift: d7ec5d5cc95df7f08c655e5a6500b54f4b092e89
+  Apollo: 450856adbdebcdf28c3c671f81732ac3f9944065
+  GRDB.swift: 225cf9c1354753e92e20c2a1fa2912b924c9da6e
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
 
-PODFILE CHECKSUM: a99113457c6627538a8cf13f3f10728ac6c05d77
+PODFILE CHECKSUM: ef74457f16a8a8c5a7a98864bfe865c24a0bd5b4
 
 COCOAPODS: 1.5.3

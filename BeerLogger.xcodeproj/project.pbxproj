@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B007E30F21B16D2500D68721 /* RateBeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B007E30E21B16D2500D68721 /* RateBeer.swift */; };
+		B0A139C321B3BEC20023065B /* BeerSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A139C221B3BEC20023065B /* BeerSearchQuery.swift */; };
 		B0C7B70521AEBFAE00475B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70421AEBFAE00475B59 /* AppDelegate.swift */; };
 		B0C7B70721AEBFAE00475B59 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70621AEBFAE00475B59 /* FirstViewController.swift */; };
 		B0C7B70921AEBFAE00475B59 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C7B70821AEBFAE00475B59 /* SecondViewController.swift */; };
@@ -23,6 +24,7 @@
 		567846A6ED8EAD3D334E5673 /* Pods_BeerLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		782F1A0C1067EF547887F8E6 /* Pods-BeerLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerLogger.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger.release.xcconfig"; sourceTree = "<group>"; };
 		B007E30E21B16D2500D68721 /* RateBeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateBeer.swift; sourceTree = "<group>"; };
+		B0A139C221B3BEC20023065B /* BeerSearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSearchQuery.swift; sourceTree = "<group>"; };
 		B0C7B70121AEBFAE00475B59 /* BeerLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C7B70421AEBFAE00475B59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C7B70621AEBFAE00475B59 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				B0C7B71821AED07F00475B59 /* SettingTableViewController.swift */,
 				B0C7B71A21AED82700475B59 /* InputAPIKeyViewController.swift */,
 				B007E30E21B16D2500D68721 /* RateBeer.swift */,
+				B0A139C221B3BEC20023065B /* BeerSearchQuery.swift */,
 			);
 			path = BeerLogger;
 			sourceTree = "<group>";
@@ -178,11 +181,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BeerLogger/Pods-BeerLogger-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Apollo/Apollo.framework",
 				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Apollo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,6 +222,7 @@
 				B0C7B71921AED07F00475B59 /* SettingTableViewController.swift in Sources */,
 				B0C7B70921AEBFAE00475B59 /* SecondViewController.swift in Sources */,
 				B0C7B70521AEBFAE00475B59 /* AppDelegate.swift in Sources */,
+				B0A139C321B3BEC20023065B /* BeerSearchQuery.swift in Sources */,
 				B0C7B71B21AED82700475B59 /* InputAPIKeyViewController.swift in Sources */,
 				B0C7B70721AEBFAE00475B59 /* FirstViewController.swift in Sources */,
 				B007E30F21B16D2500D68721 /* RateBeer.swift in Sources */,

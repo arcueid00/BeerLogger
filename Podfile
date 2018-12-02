@@ -8,6 +8,7 @@ target 'BeerLogger' do
   # Pods for BeerLogger
   pod 'GRDB.swift'
   pod 'Apollo'
+  pod 'ObjectMapper'
 
 
 end

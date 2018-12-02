@@ -33,6 +33,7 @@ class InputAPIKeyViewController: UIViewController {
     
     @IBAction func didPushTestButton(_ sender: Any) {
         let ratebeer = RateBeer()
+        ratebeer.apiKey = APIKeyTextField.text!
         _ = ratebeer.GetJson()
         
     }
